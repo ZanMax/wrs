@@ -1,0 +1,23 @@
+PROJECT_NAME = "Work Report"
+PROJECT_DESCRIPTION = "Work Report System to control users work time."
+PROJECT_VERSION = "0.1.0"
+DEVELOPER_MODE = True
+API_PATH = "/api"
+DB_HOST = "127.0.0.1"
+DB_PORT = "3306"
+DB_NAME = "wrs"
+DB_USER = "wrs"
+DB_PASS = "strongPassword"
+SQLALCHEMY_DATABASE_URI = (
+    f"mysql://{DB_USER}:{DB_PASS}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
+)
+BACKEND_CORS_ORIGINS = ["*"]
+ALLOW_METHODS = ['*']
+ALLOW_HEADERS = ['*']
+GEOIP_FILE = 'utils/geoip/GeoLite2-City.mmdb'
+DEFAULT_ALPHABET = '6N0zxf47dgP94gI7raSLew4SwA9QrEy6w9N6ipwz'
+DEFAULT_BLOCK_SIZE = 24
+MIN_LENGTH = 5
+SECRET_KEY: str = "0wa9x0Yxnx4REIZbLbGU8kUsaBchundomISQJ32i"
+ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24 * 8
+ALGORITHM = "HS256"
